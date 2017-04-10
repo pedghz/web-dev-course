@@ -1,0 +1,22 @@
+<table id="countryTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Capital</th>
+      <th>Population</th>
+      <th>Area</th>
+    </tr>
+  </thead>
+  <tbody>
+     {% for c in countries %}
+        <tr>
+          <td>{{c.name }}</td>
+          <td>{{c.capital }}</td>
+          <td>{{c.population}}</td>
+          <td>{{c.area}} km2</td>
+        </tr>
+     {% endfor %}
+  </tbody>
+</table>
+
+
